@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import Chart from 'chart.js/auto';
 
 const MyChart = ({data1, data2}) => {
+    console.log("Data1",data1)
+    console.log("Data2",data2)
     const [X, setX] = useState([]);
     const [Y, setY] = useState([]);
     useEffect(()=>{
