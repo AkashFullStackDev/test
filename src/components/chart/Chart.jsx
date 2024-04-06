@@ -31,7 +31,7 @@ const MyChart = ({data1, data2}) => {
               data: Y.slice(0, 50),
               fill: false,
               borderColor: 'rgb(75, 192, 192)',
-              tension: 0.1,
+              tension: 100,
               point: {
                 radius: 2,
                 borderWidth: 1,

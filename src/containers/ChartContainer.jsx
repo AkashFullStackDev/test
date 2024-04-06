@@ -23,9 +23,9 @@ const ChartContainer = () => {
     }
   };
 
-  useEffect(() => {
-    const data1 = fetchData("https://retoolapi.dev/gDa8uC/data");
-    const data2 = fetchData("https://retoolapi.dev/o5zMs5/data");
+  useEffect(async () => {
+    const data1 = await fetchData("https://retoolapi.dev/gDa8uC/data");
+    const data2 = await fetchData("https://retoolapi.dev/o5zMs5/data");
     if(Array.isArray(data1) && Array.isArray(data2)){
         setX(data1);
         setY(data2);
